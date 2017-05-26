@@ -11,7 +11,7 @@ import android.util.Log;
 
 public abstract class Screen extends Activity {
 
-    private final String tag = getClass().getSimpleName() ;
+    protected final String tag = getClass().getSimpleName() ;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
