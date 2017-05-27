@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".screens.FirstScreen">
+        <activity android:name=".screens.SecondScreen">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

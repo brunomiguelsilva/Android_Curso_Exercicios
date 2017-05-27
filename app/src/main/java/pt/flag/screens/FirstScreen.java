@@ -23,7 +23,7 @@ public class FirstScreen extends Screen{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.first_screen );
+        setContentView(R.layout.first_screen);
 
         label = (TextView) findViewById(R.id.first_screen_label);
         button = (Button) findViewById(R.id.first_screen_button);
