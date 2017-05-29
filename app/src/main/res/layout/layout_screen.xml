@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_bottom"
+        android:padding="10dp"
+        android:weightSum="3"
+        android:background="#0000fa"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/layout_screen_button_a"
+            android:text="BUTTON A"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/layout_screen_button_b"
+            android:text="BUTTON B"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/layout_screen_button_c"
+            android:text="BUTTON C"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_above="@+id/linear_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:background="#00fd02"
+            android:text="EditText A"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_top"
+        android:weightSum="3"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/layout_screen_text_view_a"
+            android:text="TextView A"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#F00"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/layout_screen_text_view_b"
+            android:text="TextView B"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#fd00fd"
+            android:layout_height="50dp" />
+        <Button
+            android:id="@+id/layout_screen_text_view_c"
+            android:text="TextView C"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#fcfc01"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</RelativeLayout>

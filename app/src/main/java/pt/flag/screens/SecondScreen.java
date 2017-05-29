@@ -13,6 +13,10 @@ import pt.flag.R;
  */
 
 public class SecondScreen extends Screen {
+    private static final String LABEL_VALUE = "LabelValue";
+    private static final int MAX_VALUE = 10;
+    private static final int MIN_VALUE = 0;
+
     private Button buttonMinus;
     private Button buttonPlus;
     private TextView labelResult;
@@ -22,15 +26,37 @@ public class SecondScreen extends Screen {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_screen);
 
+        findViews();
+        addListeners();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(LABEL_VALUE, labelResult.getText().toString());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String value = savedInstanceState.getString(LABEL_VALUE);   labelResult.setText(value);
+    }
+
+    private void findViews()
+    {
         buttonMinus = (Button) findViewById(R.id.second_screen_button_minus);
         buttonPlus = (Button) findViewById(R.id.second_screen_button_plus);
         labelResult = (TextView) findViewById(R.id.second_screen_label_result);
+    }
 
+    private void addListeners(){
         buttonMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String text = labelResult.getText().toString();
                 int value = Integer.parseInt(text);
+                //buttonMinus.setEnabled(value = MIN_VALUE);
+                //buttonPlus.setEnabled(true);
                 labelResult.setText(String.valueOf(--value));
             }
         });
@@ -40,6 +66,8 @@ public class SecondScreen extends Screen {
             public void onClick(View v) {
                 String text = labelResult.getText().toString();
                 int value = Integer.parseInt(text);
+                //buttonPlus.setEnabled(value <= MAX_VALUE);
+                //buttonMinus.setEnabled(true);
                 labelResult.setText(String.valueOf(++value));
             }
         });
