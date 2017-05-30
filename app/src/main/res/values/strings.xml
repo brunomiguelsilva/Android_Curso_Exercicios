@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">FlagApplication</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="layout_screen_text_view_a">TextView A</string>
+    <string name="layout_screen_text_view_b">TextView B</string>
+    <string name="layout_screen_text_view_c">TextView C</string>
+    <string name="layout_screen_edit_text_a">EditText A</string>
+    <string name="layout_screen_text_view_d">TextView D</string>
+    <string name="layout_screen_text_view_e">TextView E</string>
+    <string name="layout_screen_button_a">BUTTON A</string>
+    <string name="layout_screen_button_b">BUTTON B</string>
+    <string name="layout_screen_button_c">BUTTON C</string>
 </resources>
