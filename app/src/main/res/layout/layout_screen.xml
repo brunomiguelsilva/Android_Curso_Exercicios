@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+    <!-- LinearLayout Bottom-->
     <LinearLayout
         android:id="@+id/linear_layout_bottom"
         android:padding="10dp"
@@ -11,18 +12,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- Button A-->
         <Button
             android:id="@+id/layout_screen_button_a"
             android:text="@string/layout_screen_button_a"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="50dp" />
+
+        <!-- Button B-->
         <Button
             android:id="@+id/layout_screen_button_b"
             android:text="@string/layout_screen_button_b"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="50dp" />
+
+        <!-- Button C-->
         <Button
             android:id="@+id/layout_screen_button_c"
             android:text="@string/layout_screen_button_c"
@@ -31,7 +37,7 @@
             android:layout_height="50dp" />
     </LinearLayout>
 
-
+    <!-- TextView E-->
     <TextView
         android:id="@+id/layout_screen_text_view_e"
         android:text="@string/layout_screen_text_view_e"
@@ -45,6 +51,7 @@
         android:layout_marginStart="14dp"
         android:layout_alignTop="@+id/layout_screen_text_view_d" />
 
+    <!-- TextView D-->
     <TextView
         style="@style/CodeFont"
         android:id="@+id/layout_screen_text_view_d"
@@ -59,6 +66,7 @@
         android:layout_alignRight="@id/layout_screen_edit_text_a"
         android:layout_above="@id/layout_screen_edit_text_a"/>
 
+    <!-- EditText A-->
     <EditText
         android:id="@+id/layout_screen_edit_text_a"
         android:text="@string/layout_screen_edit_text_a"
@@ -67,6 +75,7 @@
         android:background="#00fd02"
         android:layout_height="wrap_content" />
 
+    <!-- RelativeLayout Top-->
     <RelativeLayout
         android:id="@+id/relative_layout_top"
         android:layout_width="match_parent"
@@ -74,6 +83,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
+        <!-- TextView A-->
         <TextView
             android:id="@+id/layout_screen_text_view_a"
             android:text="@string/layout_screen_text_view_a"
@@ -82,6 +92,7 @@
             android:layout_height="50dp"
             android:padding="15dp"
             android:layout_alignParentLeft="true" />
+        <!-- TextView B-->
         <TextView
             android:id="@+id/layout_screen_text_view_b"
             android:text="@string/layout_screen_text_view_b"
@@ -90,6 +101,7 @@
             android:layout_height="50dp"
             android:padding="15dp"
             android:layout_centerHorizontal="true" />
+        <!-- TextView C-->
         <TextView
             android:id="@+id/layout_screen_text_view_c"
             android:text="@string/layout_screen_text_view_c"

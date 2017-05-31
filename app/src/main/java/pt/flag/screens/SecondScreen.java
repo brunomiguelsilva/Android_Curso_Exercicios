@@ -58,6 +58,7 @@ public class SecondScreen extends Screen {
                 //buttonMinus.setEnabled(value = MIN_VALUE);
                 //buttonPlus.setEnabled(true);
                 labelResult.setText(String.valueOf(--value));
+                //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://slbenfica.pt"));
             }
         });
 

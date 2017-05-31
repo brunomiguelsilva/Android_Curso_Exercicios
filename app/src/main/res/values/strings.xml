@@ -10,4 +10,12 @@
     <string name="layout_screen_button_a">BUTTON A</string>
     <string name="layout_screen_button_b">BUTTON B</string>
     <string name="layout_screen_button_c">BUTTON C</string>
+
+    <string name="actions_screen_button_open_activity_1">ABRIR ACTIVITY</string>
+    <string name="actions_screen_button_open_url">ABRIR URL</string>
+    <string name="actions_screen_button_open_dialer">ABRIR DIALER</string>
+    <string name="actions_screen_edit_text_open_activity_2">Introduza Texto</string>
+    <string name="actions_screen_button_open_activity_2">ABRIR ACTIVITY</string>
+    <string name="actions_screen_button_make_call">FAZER CHAMADA</string>
+
 </resources>
