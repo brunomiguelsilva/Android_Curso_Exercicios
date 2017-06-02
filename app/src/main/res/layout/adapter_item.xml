@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Row -->
+    <TextView
+        android:id="@+id/adapter_item_row_label"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:text="Row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Value -->
+    <TextView
+        android:id="@+id/adapter_item_value_label"
+        android:textColor="@color/colorAccent"
+        android:text="Value"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

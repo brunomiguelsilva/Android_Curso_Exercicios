@@ -47,6 +47,7 @@ public class ActionsScreen extends Screen {
             buttonOpenActivity_2.setEnabled(false);
     }
 
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -144,10 +145,11 @@ public class ActionsScreen extends Screen {
         buttonMakeCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + 966664806));
+                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + 911111111));
 
                 if (ContextCompat.checkSelfPermission(ActionsScreen.this,
-                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                        Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED)
+                {
 
                     ActivityCompat.requestPermissions(ActionsScreen.this,
                             new String[]{Manifest.permission.CALL_PHONE},
@@ -156,11 +158,16 @@ public class ActionsScreen extends Screen {
                     // MY_PERMISSIONS_REQUEST_CALL_PHONE is an
                     // app-defined int constant. The callback method gets the
                     // result of the request.
-                } else {
+                }
+                else
+                {
                     //You already have permission
-                    try {
+                    try
+                    {
                         startActivity(intent);
-                    } catch (SecurityException e) {
+                    }
+                    catch (SecurityException e)
+                    {
                         e.printStackTrace();
                     }
                 }
@@ -179,7 +186,7 @@ public class ActionsScreen extends Screen {
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
                     // permission was granted, yay! Do the phone call
-                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + 966664806));
+                    Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + 911111111));
                     if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                         // TODO: Consider calling
                         //    ActivityCompat#requestPermissions
@@ -192,8 +199,9 @@ public class ActionsScreen extends Screen {
                     }
                     startActivity(intent);
                     Toast.makeText(this, "Permission granted", Toast.LENGTH_SHORT).show();
-                } else {
-
+                }
+                else
+                {
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
                     Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show();
