@@ -28,7 +28,7 @@
 
     <EditText
         android:id="@+id/actions_screen_edit_text_open_activity"
-        android:text="@string/actions_screen_edit_text_open_activity_2"
+        android:hint="@string/actions_screen_edit_text_open_activity_2"
         android:layout_below="@+id/actions_screen_button_open_dialer"
         android:layout_alignStart="@+id/actions_screen_button_open_dialer"
         android:layout_toRightOf="@+id/actions_screen_button_open_dialer"
@@ -46,7 +46,7 @@
 
     <Button
         android:id="@+id/actions_screen_button_make_call"
-        android:text="@string/actions_screen_button_open_activity_2"
+        android:text="@string/actions_screen_button_make_call"
         android:layout_below="@+id/actions_screen_button_open_activity_2"
         android:layout_alignStart="@+id/actions_screen_button_open_activity_2"
         android:layout_toRightOf="@+id/actions_screen_button_open_activity_2"

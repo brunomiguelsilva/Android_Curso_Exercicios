@@ -2,6 +2,7 @@
 
     package="pt.flag">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <uses-permission android:name="android.permission.CALL_PHONE" />
 
         <activity android:name=".screens.ActionsScreen">
 
@@ -18,9 +21,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".screens.SecondScreen">
+        <activity android:name=".screens.SecondScreen"/>
+        <activity android:name=".screens.DetailsScreen"/>
 
-        </activity>
     </application>
 
 </manifest>
